@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Render all elements normally -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- fonts awesome -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- bootstrap css library -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- main stylesheet -->
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Weather</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand logo d-flex" href="#"
+          ><img src="imgs/logo.png" class="w-75 h-75 text-white" alt="" />
+          <div class="content-logo d-flex flex-column ms-2">
+            <h3 class="head-logo">Weather</h3>
+            <span>tagline goes here</span>
+          </div>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active text-info" aria-current="page" href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://edition.cnn.com/weather"
+                target="_blank"
+                >News</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://weather.com/ar-EG/weather/today/l/EGXX0004:1:EG?Goto=Redirected"
+                target="_blank"
+                >Weather Chanel</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact/contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- start weather Sec -->
+    <div class="weatherSec">
+      <div class="container p-5">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="position-relative d-flex">
+              <input
+                type="search"
+                id="inputSearch"
+                placeholder="Find Your Location"
+                class="search-inp form-control rounded-4"
+              />
+              <button
+                id="btnSearch"
+                class="btn-weather rounded-5 btn text-white position-absolute"
+              >
+                Find
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="row gx-0">
+          <!-- Today Date Sec -->
+          <div class="col-md-4 item my-5 rounded-start-4">
+            <div
+              class="d-flex justify-content-between itemTop rounded-start-4 p-3"
+            >
+              <p id="todayDateName" class="my-auto"></p>
+              <span>
+                <span id="todayDateDayNumber"></span>
+                <span id="todayDateMonth"></span>
+              </span>
+            </div>
+            <div id="today" class="p-3">
+              <p id="todayLocation" class="my-2"></p>
+              <div
+                class="d-flex flex-wrap justify-content-between align-items-center"
+              >
+                <span class="w-100 fw-bold spanTemp text-white">
+                  <span id="todayTemp">30.1</span>
+                  <span><sup>o</sup>C</span>
+                </span>
+                <img id="todayImg" src="imgs/sun.webp" class="w-25" alt="" />
+              </div>
+              <p id="todayConditionText" class="text-info">Sunny</p>
+            </div>
+            <div class="itemFooter d-flex ms-2">
+              <div class="d-flex me-3">
+                <img
+                  src="imgs/icon-umberella.png"
+                  class="w-50 h-50 me-2"
+                  alt=""
+                />
+                <p id="humidity">20%</p>
+              </div>
+              <div class="d-flex me-3">
+                <img src="imgs/icon-wind.png" class="w-50 h-50 me-2" alt="" />
+                <p id="wind">18Km/h</p>
+              </div>
+              <div class="d-flex me-3">
+                <img
+                  src="imgs/icon-compass.png"
+                  class="w-50 h-50 me-2"
+                  alt=""
+                />
+                <p id="windDirection">East</p>
+              </div>
+            </div>
+          </div>
+          <!-- Next Date Sec -->
+          <div class="col-md-4 itemSecCenter my-5">
+            <div class="d-flex justify-content-center itemcenter p-3">
+              <p class="nextDateName my-auto">Monday</p>
+            </div>
+            <div class="p-3 my-2 text-center">
+              <img src="imgs/sun.webp" class="w-25 nextDateImg" alt="" />
+              <div
+                class="d-flex flex-wrap justify-content-center align-items-center"
+              >
+                <span class="fw-bold fs-5 text-white">
+                  <span class="nextMaxTemp">30.1</span>
+                  <span><sup>o</sup>C</span>
+                </span>
+              </div>
+              <span class="nextMinTemp text-center">25.4</span>
+              <p class="nextConditionText text-info mt-4">Sunny</p>
+            </div>
+          </div>
+          <!-- Next Date Sec -->
+          <div class="col-md-4 item my-5 rounded-end-4">
+            <div class="d-flex justify-content-center itemcenter p-3">
+              <p class="nextDateName my-auto">Monday</p>
+            </div>
+            <div class="p-3 my-2 text-center">
+              <img src="imgs/sun.webp" class="w-25 nextDateImg" alt="" />
+              <div
+                class="d-flex flex-wrap justify-content-center align-items-center"
+              >
+                <span class="fw-bold fs-5 text-white">
+                  <span class="nextMaxTemp">30.1</span>
+                  <span><sup>o</sup>C</span>
+                </span>
+              </div>
+              <span class="nextMinTemp text-center">25.4</span>
+              <p class="nextConditionText text-info mt-4">Sunny</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

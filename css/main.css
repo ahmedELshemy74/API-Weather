@@ -1,0 +1,101 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  color: #bfc1c8;
+  font-family: "Roboto", "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.5;
+  background: #1e202b;
+}
+.navbar{
+  margin-bottom: 40px;
+}
+.navbar .logo{
+    color: white;
+    font-size: 20px;
+}
+.navbar ul a{
+    color: white;
+    font-size: 17px;
+    padding: 50px;
+}
+.navbar .content-logo .head-logo{
+   font-size: 18px;
+}
+.navbar .content-logo span{
+   font-size: 10px;
+   padding: 0;
+   margin: 0;
+}
+.navbar ul a:hover{
+    color: #09c
+}
+.navbar-toggler span{
+  color: white;
+  background-color: white;
+  border-color: gray;
+}
+.navbar-toggler .navbar-toggler-icon{
+  color: white;
+  background-color: white;
+  border-color: gray;
+}
+
+/* weather */
+.weatherSec{
+  background-image: url(../imgs/banner.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.search-inp{
+  background-color: #1e202b;
+  border: none;
+  padding: 20px;
+  color: white;
+}
+.weatherSec .form-control:focus {
+  color: white;
+  background-color: #1e202b ;
+  outline: 0;
+  box-shadow:none;
+}
+.search-inp::placeholder{
+  color: gray;
+}
+.btn-weather{
+  top: 5px;
+  right: 5px;
+  bottom: 5px;
+  padding: 0 40px;
+  background-color: #009ad8;
+}
+.btn-weather:hover{
+  background-color: #009ad8;
+}
+.item{
+  background-color: #323544;
+  margin-top: 30px;
+}
+.itemTop{
+  background: rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-weight: 400;
+}
+.spanTemp{
+  font-size: 70px;
+}
+.itemSecCenter{
+  background-color: #262936f6;
+  margin-top: 30px;
+}
+.itemcenter{
+  background:#262936d5;
+  text-align: center;
+  font-weight: 400;
+}
